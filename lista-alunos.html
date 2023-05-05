@@ -13,40 +13,21 @@
     </head>
 
     <body>        
-        <input id="path" type="text" hidden name="path" value="">       
-        <nav class="custom navbar fixed-top navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="#">Lista de Alunos</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav  mr-auto">               
-                    <li class="nav-item"><a class="nav-link" href="lista-alunos.html">Caixa<span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="cadastro-alunos.html">Cadastro de Alunos</a></li>                   
-                        
-                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Olá,  Usuário</a>                     
-                        <div class="dropdown-menu position-absolute" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Alterar Cadastro</a>
-                            <a class="dropdown-item" onKeyUp="tabenter(event, getElementById('senha-atual'))"   href="#" data-toggle="modal" data-target="#modalAltSenha">Alterar Senha</a>
-                            <a class="dropdown-item" href="SairUsuario?operacao=Sair">Sair</a>                         
-                        </div>
-                    </li>
-                    <li class=" nav-item"><img class=" mt-2" src=""  style="border-radius: 5px;" height="55" /></li>
-                </ul>
-                <form action="Pesquisar-aluno"  method="POST" >
-                    <div class="row">
-                        <div class="col-4 col-md-0"></div>
-                        <div class="px-0 col-8 col-md-12 input-group mb-3">                        
-                            <input class="form-control form-control-sm campoBusca  " type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar" aria-describedby="basic-addon1"  aria-label="Pesquisar">
-                            <div class="input-group-append">                     
-                                <button  class="btn btn-sm btn-success" name="operacao" value= "Pesquisar" type="submit"><img src="img/buscab.svg" width="20" /></button>
-                            </div>
-                        </div>
-                    </div>          
-                </form>
-            </div>
-        </nav>  
+          
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Lista de Alunos</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Lista de Alunos<span class="sr-only">(Página atual)</span></a>
+      <a class="nav-item nav-link" href="cadastro-alunos.html">Novo Aluno</a>
+      <a class="nav-item nav-link" href="#">Relatório</a>
+      <a class="nav-item nav-link disabled" href="index.html">Sair</a>
+    </div>
+  </div>
+</nav>  
         
         <div class="container-fluid">            
             <div class="content">                  
